@@ -1,0 +1,303 @@
+/* general */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  font-family: 'Calibri', Arial, sans-serif;
+}
+h1 {
+  font-size: 55px;
+  font-family: "Charmonman", cursive;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  text-shadow: 0 0 5px black
+}
+.contenedor {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+/* encabezado */
+.encabezado {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 6rem;
+  background-color: black;
+  z-index: 100;
+  box-shadow: 0 0 10px red;
+}
+.menu-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+.menu-uno a, 
+.menu-dos a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0 3vw;
+}
+.logo-text {
+  color: white;
+  font-size: 40px;
+  font-family: "Charmonman", cursive;
+  margin-top: 10px;
+}
+
+/* secciones */
+.seccion {
+  background-color: white;
+  box-shadow: 0 0 10px Crimson;
+  border-radius: 5px;
+  padding: 30px;
+  margin: 40px;
+  font-size: 17px;
+  text-shadow: 0 0 10px black;
+}
+.quienes-somos {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  margin-left: 10px;
+  margin-right: 50%;
+}
+.moissanita-y-Circonita {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.Muestrario, 
+.Diferencias {
+  text-align: center;
+  padding: 20px;
+}
+table, 
+th, 
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  color: black;
+  text-shadow: 0 0 10px black;
+}
+.card, 
+.card-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 50px;
+  box-shadow: 0 0 10px Crimson;
+}
+.card-body p {
+  color: black;
+  text-shadow: 0 0 10px black;
+}
+.card img {
+  box-shadow: 0 0 10px black;
+}
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+.card {
+  flex: 1 1 300px;
+}
+
+/*imagenes*/
+.logo-img {
+  height: 120px;
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.mvsc {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 300px;
+  width: 100%;
+  margin-left: auto;
+  position: static; 
+  margin-top: -290px;
+  margin-right: 100px;
+  border-radius: 5px;
+}
+.imagen{
+  height: 35%;
+  width: 35%;
+  margin-left: 58%;
+  margin-top: -590px;
+}
+.msyci {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+/*pie de pagina*/
+footer {
+  width: 100%;
+  height: 120px;
+  background-color: black;
+  box-shadow: 0 0 10px red;
+}
+/*para mas dispositivos*/
+@media (min-width: 400px) and (max-width: 799px){
+  .encabezado {
+    height: 5rem;
+    box-shadow: 0 0 5px red;
+  }
+
+  .menu-uno a, 
+  .menu-dos a {
+    font-size: 0.9rem;
+    margin: 0 2vw;
+  }
+
+  .logo-text {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+  p{
+    font-size: 15px;
+  }
+  .quienes-somos {
+    margin-right: 0;
+    margin-left: 5%;
+  }
+
+  .Moissanita-y-Circonita {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card-group {
+    flex-direction: column;      
+    align-items: center;         
+    gap: 20px;                   
+  }
+  
+  .card {
+    width: 90%;                  
+    max-width: 220px;           
+    flex: none;                 
+  }
+
+  .msyci {
+    width: 90%;
+    max-width: 250px;
+  }
+
+  .imagen,
+  .mvsc {
+    display: none; 
+  }
+
+  .contenedor {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .seccion {
+    margin: 20px;
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  footer {
+    height: auto;
+    padding: 10px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1199px){
+  .encabezado {
+    height: 5rem;
+    box-shadow: 0 0 5px red;
+  }
+
+  .menu-uno a, 
+  .menu-dos a {
+    font-size: 0.9rem;
+    margin: 0 2vw;
+  }
+
+  .logo-text {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+  p{
+    font-size: 15px;
+  }
+  .quienes-somos {
+    margin-right: 0;
+    margin-left: 5%;
+  }
+
+  .Moissanita-y-Circonita {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-group {    
+    align-items: center;         
+    gap: 20px;                   
+  }
+  
+  .card {
+    width: 90%;                  
+    max-width: 280px;           
+    flex: none;                 
+  }
+
+  .msyci {
+    width: 80%;
+    max-width: 280px;
+  }
+
+  .imagen,
+  .mvsc {
+    display: none; 
+  }
+
+  .contenedor {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  table{
+  margin-left: 15%;
+  }
+
+  .seccion {
+    margin: 20px;
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  footer {
+    height: auto;
+    padding: 10px;
+  }
+}
